@@ -9,7 +9,7 @@ constexpr int A = 9, B = 5, C = 7, D = 8, E = 9, F = 5, G = 5, H = 9, I = 6, J =
  
 void f(char x, int i) {
     std::this_thread::sleep_for(std::chrono::seconds(1));
-    std::osyncstream(std::cout) << "From  set " << x << " the action done is " << i << ".\n";
+    std::osyncstream(std::cout) << "From set " << x << " the action done is " << i << ".\n";
 }
 
 std::latch La(A), Lb(B), Lc(C), Ld(D), Le(E), Lg(G), Lh(H), Li(I), Lj(J);
